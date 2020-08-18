@@ -1,0 +1,39 @@
+.Hamburger {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Hamburger > div {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #f4f4f4;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  transition: 500ms;
+}
+
+.Hamburger > div:nth-child(2) {
+  background-color: transparent;
+}
+
+.Hamburger > div > div {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Hamburger > div > div {
+  transition: 500ms;
+  transform-origin: center;
+  border-radius: 2px;
+}
